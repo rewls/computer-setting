@@ -33,6 +33,10 @@ let &t_EI = "\<ESC>[2 q"
 let g:translator_target_lang='ko'
 
 
+" Set <C-c> to copy selected text using xclip
+vmap <C-c> y:call system("xclip -selection clipboard", getreg("\""))<CR>
+
+
 " Goyo plugin (https://github.com/junegunn/goyo.vim)
 " Ensure :q to quit even when Goyo is active
 function! s:goyo_enter()
