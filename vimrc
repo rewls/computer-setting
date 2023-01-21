@@ -22,10 +22,11 @@ set laststatus=2
 set relativenumber
 
 
-" Set cursor shape for insert mode
+" Set cursor shape for insert mode and replace mode
 " See VT10X escape sequences or cursorshape in config.h
 let &t_SI = "\<ESC>[6 q"
 let &t_EI = "\<ESC>[2 q"
+let &t_SR = "\<ESC>[4 q"
 
 
 " vim-translator plugin (https://github.com/voldikss/vim-translator)
