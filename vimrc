@@ -7,9 +7,9 @@ source $VIMRUNTIME/defaults.vim
 set packpath+=~/.vim/pack/
 
 
-" seoul256 plugin (https://github.com/junegunn/seoul256.vim)
+" vim-colors-github plugin (https://github.com/cormacrelf/vim-colors-github)
 " Set colorscheme
-colorscheme seoul256
+colorscheme github
 
 
 set number
