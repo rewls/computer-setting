@@ -5,13 +5,6 @@ source $VIMRUNTIME/defaults.vim
 
 
 set packpath+=~/.vim/pack/
-
-
-" vim-colors-github plugin (https://github.com/cormacrelf/vim-colors-github)
-" Set colorscheme
-colorscheme github
-
-
 set number
 set cursorline
 set tabstop=8
@@ -29,22 +22,31 @@ let &t_EI = "\<ESC>[2 q"
 let &t_SR = "\<ESC>[4 q"
 
 
+" Set <C-c> to copy selected text using xclip
+vmap <C-c> y:call system("xclip -selection clipboard", getreg("\""))<CR>
+
+
+" vim-colors-github plugin (https://github.com/cormacrelf/vim-colors-github)
+" Set colorscheme
+colorscheme github
+
+
 " vim-translator plugin (https://github.com/voldikss/vim-translator)
 " Set target language
 let g:translator_target_lang='ko'
 
-
-" Set <C-c> to copy selected text using xclip
-vmap <C-c> y:call system("xclip -selection clipboard", getreg("\""))<CR>
+" markdown-preview.nvim plugin
+" (https://github.com/iamcco/markdown-preview.nvim)
+let g:mkdp_browser = 'firefox'
 
 
 " Goyo plugin (https://github.com/junegunn/goyo.vim)
 " Ensure :q to quit even when Goyo is active
 function! s:goyo_enter()
-  let b:quitting = 0
-  let b:quitting_bang = 0
-  autocmd QuitPre <buffer> let b:quitting = 1
-  cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
+  set b:quitting = 0
+  set b:quitting_bang = 0
+  autocmd QuitPre <buffer> set b:quitting = 1
+  cabbrev <buffer> q! set b:quitting_bang = 1 <bar> q!
 endfunction
 
 function! s:goyo_leave()
