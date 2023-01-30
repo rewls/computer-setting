@@ -43,10 +43,10 @@ let g:mkdp_browser = 'firefox'
 " Goyo plugin (https://github.com/junegunn/goyo.vim)
 " Ensure :q to quit even when Goyo is active
 function! s:goyo_enter()
-  set b:quitting = 0
-  set b:quitting_bang = 0
-  autocmd QuitPre <buffer> set b:quitting = 1
-  cabbrev <buffer> q! set b:quitting_bang = 1 <bar> q!
+  let b:quitting = 0
+  let b:quitting_bang = 0
+  autocmd QuitPre <buffer> let b:quitting = 1
+  cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
 endfunction
 
 function! s:goyo_leave()
