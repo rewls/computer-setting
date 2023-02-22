@@ -1,0 +1,7 @@
+[Security]
+EAP-Method=PEAP
+EAP-Identity=
+EAP-Password=
+EAP-PEAP-Phase2-Method=GTC
+EAP-PEAP-Phase2-Identity=
+EAP-PEAP-Phase2-Password=

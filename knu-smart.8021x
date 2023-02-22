@@ -1,0 +1,7 @@
+[Security]
+EAP-Method=TTLS
+EAP-Identity=
+EAP-Password=
+EAP-TTLS-Phase2-Method=Tunneled-PAP
+EAP-TTLS-Phase2-Identity=
+EAP-TTLS-Phase2-Password=
