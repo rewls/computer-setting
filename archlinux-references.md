@@ -53,3 +53,15 @@
 - [X keyboard extension](https://wiki.archlinux.org/title/X_keyboard_extension)
 
 - [xmodmap - Archlinux wiki](https://wiki.archlinux.org/title/Xmodmap)
+
+- [Laptop - Archlinux wiki](https://wiki.archlinux.org/title/Laptop#Touchpad)
+
+- [libinput - Archlinux wiki](https://wiki.archlinux.org/title/Libinput)
+
+- [USB storage devices](https://wiki.archlinux.org/title/USB_storage_devices)
+
+- [NTFS](https://wiki.archlinux.org/title/NTFS)
+
+- [xrandr](https://wiki.archlinux.org/title/xrandr)
+
+- [Multihead](https://wiki.archlinux.org/title/Multihead)
