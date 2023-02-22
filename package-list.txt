@@ -7,6 +7,7 @@ efibootmgr
 efivar
 firefox
 gcc
+gdb
 git
 grub
 ibus-hangul
@@ -20,8 +21,9 @@ man-db
 man-pages
 nodejs
 noto-fonts-cjk
+openssh
 pkgconf
-sudo
+scrot
 texinfo
 ttf-dejavu
 vim
