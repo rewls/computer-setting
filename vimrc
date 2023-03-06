@@ -7,19 +7,20 @@ source $VIMRUNTIME/defaults.vim
 set packpath+=~/.vim/pack/
 set number
 set cursorline
-set tabstop=8
-set softtabstop=4
+set tabstop=4
 set shiftwidth=4
-set noexpandtab
+set expandtab
 set laststatus=2
 set relativenumber
-
+set autowriteall
 
 " Set cursor shape for insert mode and replace mode
 " See VT10X escape sequences or cursorshape in config.h
 let &t_SI = "\<ESC>[6 q"
 let &t_EI = "\<ESC>[2 q"
 let &t_SR = "\<ESC>[4 q"
+" To enable folding in markdown
+let g:markdown_folding = 1
 
 
 " Set <C-c> to copy selected text using xclip
